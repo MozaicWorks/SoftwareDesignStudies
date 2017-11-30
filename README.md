@@ -68,7 +68,7 @@ Hint: you don't have to support the full language, just enough to learn about th
 
 Database engines sound very complex. However, if you pick only a subset (eg. no indexing) and don't support SQL, they pose interesting challenges.
 
-If you want to go in depth, the book [Data intensive applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/) is very useful. 
+If you want to go in depth, the book [Data intensive applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) is very useful. 
 
 Features:
 
