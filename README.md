@@ -128,10 +128,42 @@ Hints:
 * an interpretor is easier to write than a compiler
 * internal DSLs are easier to write than external DSLs or general purpose languages. Some languages support internal DSLs better.
 * don't worry if you don't know how to use grammars, compiler-compilers and other tools; just write your own syntactic and semantic parser. It'll work well enough for a small language.
-* if you know how to use advanced tools, use them
+* single-pass syntactic parsers are easier to implement (aka only read forward, never go back)
+* if you know how to use advanced tools, or if you want to learn how to use them, then go for it
 
 References:
 
 * Compiler-compiler article from [wikipedia](https://en.wikipedia.org/wiki/Compiler-compiler)
 * Martin Fowler's book on [DSLs](https://martinfowler.com/dsl.html) and the [patterns catalog](https://martinfowler.com/dslCatalog/)
 * Groovy videos on writing [internal DSLs](https://www.youtube.com/results?search_query=groovy+dsl) (very technology specific)
+
+
+### Implement tetris fully (including UI)
+
+Tetris is a well-known game, and quite easy to implement. There's no need for AI, path-finding, terrain generation etc., but it has the common design characteristics of a game: the game cycle, rendering, colision detection etc. 
+
+Games have specific design needs, and we can reuse their lessons in some of the modern dynamic web/ mobile/desktop UIs.
+
+Features:
+
+* all the rules of tetris, with all pieces, rotation and translation
+* scoring
+* leader board
+* save / load game
+
+You can approach the problem with a few different learning goals:
+
+*Changeability*:
+
+* allow control with mouse, keyboard, gamepad, and other devices. That is, separate the actions from the event that triggers them
+* allow multiple renderers: text-based in console, opengl, some type of canvas (web, mobile, desktop)
+* allow multiple ways to save game data - on disk, on a database, through a web service
+
+*Performance*:
+
+* measure frames per second and improve them as much as possible
+* ensure fps stays constant while saving / loading etc.
+
+*Incremental design*:
+
+* start with a well of depth 10 and width 1, and with a single square piece. Grow the design slowly towards the result. Of course, use TDD to do it.
