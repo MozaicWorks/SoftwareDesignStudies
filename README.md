@@ -66,17 +66,72 @@ Hint: you don't have to support the full language, just enough to learn about th
 
 ### Write your own database engine
 
-Database engines sound very complex. However, if you pick only a subset (eg. no indexing) and don't support SQL, they pose interesting challenges.
+Database engines sound very complex. However, if you pick only a subset (eg. no indexing) and don't support SQL, they become more approachable.
 
-If you want to go in depth, the book [Data intensive applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) is very useful. 
 
 Features:
 
+* Support a few data types (eg: number, string, binary, date)
 * CRUD operations
-* on disk and in-memory storage
+* On disk and in-memory storage
 
 Optional features: 
 
 * users and access rights (keep it simple)
 * optimize for read-only or for read/write
 * replication
+* transactions
+* concurrency
+
+You can approach the problem with a few different learning goals:
+
+* storage, indexing and retrieval
+* concurrent access and transactions
+* performance implications of storage
+* distributed storage systems
+* easily allow adding other data types
+
+References:
+
+* The book [Database Systems: The Complete Book](https://www.amazon.com/Database-Systems-Complete-Book-2nd/dp/0131873253/) is the ultimate reference.
+* For an easier start, the book [Data intensive applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) is very useful.
+
+### Write your own programming language
+
+Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do much. From my experience, few days are enough to have a minimum programming language working. 
+
+Features:
+
+* print to console and read from console
+* basic data types
+* basic collection types (stack, maybe list)
+* mathematical and boolean operations
+* functions
+* branching (if or switch or an alternate syntax)
+* loops (or high level functions)
+
+Optional features: 
+
+* classes / objects
+* integration with other programming languages
+* exceptions
+* recursion
+
+You can approach the problem with a few different learning goals:
+
+* General purpose language or DSL (internal / external) for a specific domain
+* Extensibility: allow addition of more data types, allow extension of existing collections or data types etc.
+* Performance (for specific operations)
+
+Hints:
+
+* an interpretor is easier to write than a compiler
+* internal DSLs are easier to write than external DSLs or general purpose languages. Some languages support internal DSLs better.
+* don't worry if you don't know how to use grammars, compiler-compilers and other tools; just write your own syntactic and semantic parser. It'll work well enough for a small language.
+* if you know how to use advanced tools, use them
+
+References:
+
+* Compiler-compiler article from [wikipedia](https://en.wikipedia.org/wiki/Compiler-compiler)
+* Martin Fowler's book on [DSLs](https://martinfowler.com/dsl.html) and the [patterns catalog](https://martinfowler.com/dslCatalog/)
+* Groovy videos on writing [internal DSLs](https://www.youtube.com/results?search_query=groovy+dsl) (very technology specific)
