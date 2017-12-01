@@ -167,3 +167,35 @@ You can approach the problem with a few different learning goals:
 *Incremental design*:
 
 * start with a well of depth 10 and width 1, and with a single square piece. Grow the design slowly towards the result. Of course, use TDD to do it.
+
+### Implement a chat system
+
+Chat systems are the simplest type of network-based application. They introduce many interesting challenges though.
+
+Features:
+
+* List chat users
+* Create a chat room
+* Chat (text-only)
+
+Optional features:
+
+* File transfers
+* Emoticons
+* Special commands (eg. \b = buzz)
+* Privacy
+* Logging of chats
+
+You can approach the problem with a few different learning goals:
+
+*Design your own protocol*:
+
+* Implement the minimal features, then add different clients: command line, web, desktop. Compare the resulting protocol with IRC (and others)
+
+*Operational concerns*:
+
+* How can you ensure scalability, performance, resilience, security?
+
+*Distributed application models*:
+
+* Peer to peer vs centralized
