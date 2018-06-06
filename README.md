@@ -14,18 +14,19 @@ When working on a design study, it's important to clarify what design qualities 
 
 If you don't know where to start, here is a list of design qualities to start from:
 
-* **Changeability**
+### Changeability
    * If a user comes and asks you for a change in 3 months, how easy it is to add it?
    * What kind of changes does youre design allow?
    * Changeability can typically be achieved through:
       * Clean Code
       * SOLID Principles
       * The Four Elements of Simple Design
-* **Simplicity** and **conciseness**
+### Simplicity and Conciseness
    * Can you make the code shorter?
    * Can you reduce to solutions that involve fewer parts, fewer code constructs, fewer conditionals?
    * Can you use immutable data?
-* **Performance** - Are there simple ways to improve the performance without affecting the other qualities? (Hint: a common one is to transform collections in parallel)
+### Performance
+Are there simple ways to improve the performance without affecting the other qualities? (Hint: a common one is to transform collections in parallel)
 
 ## Just exploring
 
