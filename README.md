@@ -6,7 +6,7 @@ Software design is a very broad topic, and therefore very difficult to master. T
 
 Other design disciplines have found ways to make this work. Design studies are one of the ways. Design studies mean producing a solution to a very specific problem and getting feedback on your design.
 
-Like coding katas, design studies are a way to practice. Unlike coding katas, design studies are based on common problems we find in production and are focused on solving the problem within the constraints of production environments.
+Like [coding katas](https://en.wikipedia.org/wiki/Kata_(programming)), design studies are a way to practice. Unlike coding katas, design studies are based on common problems we find in production and are focused on solving the problem within the constraints of production environments.
 
 ## Design qualities
 
