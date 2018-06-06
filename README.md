@@ -10,19 +10,19 @@ Like [coding katas](https://en.wikipedia.org/wiki/Kata_(programming)), design st
 
 ## Design Qualities
 
-When working on a design study, it's important to clarify what design qualities you want to achieve. The design qualities depend on the production context, so it's partly your choice.
+When working on a design study, it's important to clarify what design qualities you want to achieve. The design qualities depend on the production context. So it's partly your choice, because you often need to use existing tools, systems or structures that are your constraints.
 
 If you don't know where to start, here is a list of design qualities to start from:
 
 ### Changeability
    * If a user comes and asks you for a change in 3 months, how easy it is to add it?
-   * What kind of changes does youre design allow?
+   * What kind of changes does your design allow?
    * Changeability can typically be achieved through:
       * Clean Code
       * [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
       * [The Four Elements of Simple Design](https://martinfowler.com/bliki/BeckDesignRules.html)
 ### Simplicity and Conciseness
-   * Can you make the code shorter?
+   * Can you make the code shorter while maintaining clarity?
    * Can you reduce to solutions that involve fewer parts, fewer code constructs, fewer conditionals?
    * Can you use immutable data?
 ### Performance
@@ -30,7 +30,7 @@ Are there simple ways to improve the performance without affecting the other qua
 
 ## Just exploring
 
-Sometimes, a design study is useful to just explore an idea. For example, check a design study on [functional composability](https://github.com/alexboly/composabilityDesignStudy), and another one on [property based testing and immutability](https://github.com/alexboly/pacmanKataPropertyBasedGroovy). 
+Sometimes, a design study is useful to just explore an idea. For example, check a design study on [functional composability](https://github.com/alexboly/composabilityDesignStudy), and another one on [property based testing and immutability](https://github.com/alexboly/pacmanKataPropertyBasedGroovy). Check also the [React Design Study](https://hackernoon.com/the-react-state-museum-a278c726315) that has more examples and details.
 
 ## Hints for the practice of a design study
 
@@ -49,7 +49,7 @@ These are things that can help you when doing design studies:
 
 A typical complaint about any design exercise is that they are too simple. While a design study is arbitrarily complex (you can build a complete twitter clone if you want to), it's unlikely you will have the time to properly explore a lot of complex problems.
 
-It turns out however that most complex problems can be split into smaller problems. These simpler problems tend to repeat, and to compose in different ways. Knowing how to solve the simpler problems and how to split the complex into simple are two important software design skills.
+It turns out however that most complex problems can simpler composed solutions. These simpler problems tend to repeat, and to compose in different ways. Knowing how to solve the simpler problems and how to split the complex into simple are two important software design skills.
 
 Also, solving the simpler problems will lead to improved design skills, which you can then use for new problems. It's anyway better than not making the effort at all.
 
@@ -69,7 +69,7 @@ Hint:
 
 Goal ideas: 
 
-* Try to do it single pass
+* Try to do it single pass (only read forward, never go back)
 * Compare performance with existing parsers (especially for large files)
 
 Hint: you don't have to support the full language, just enough to learn about the problem and its solutions
@@ -111,7 +111,7 @@ Database engines sound very complex. However, if you pick only a subset (eg. no 
 
 ### 3) Write your own programming language
 
-Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do much. From my experience, few days are enough to have a minimum programming language working. 
+Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do much. From my experience, a few days are enough to have a minimum programming language working. 
 
 
 #### Features
@@ -122,7 +122,7 @@ Writing a programming language sounds like a huge task. And it is, provided that
 * Mathematical and boolean operations
 * Functions
 * Branching (if or switch or an alternate syntax)
-* Loops (or high level functions)
+* Loops (or [higher order functions](https://en.wikipedia.org/wiki/Higher-order_function))
 
 
 #### Optional features
