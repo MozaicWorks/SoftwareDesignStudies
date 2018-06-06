@@ -8,15 +8,24 @@ Other design disciplines have found ways to make this work. Design studies are o
 
 Like [coding katas](https://en.wikipedia.org/wiki/Kata_(programming)), design studies are a way to practice. Unlike coding katas, design studies are based on common problems we find in production and are focused on solving the problem within the constraints of production environments.
 
-## Design qualities
+## Design Qualities
 
 When working on a design study, it's important to clarify what design qualities you want to achieve. The design qualities depend on the production context, so it's partly your choice.
 
-If you don't know where to start, here's a list of design qualities to start from:
+If you don't know where to start, here is a list of design qualities to start from:
 
-* **Changeability** - if a user comes and asks you for a change in 3 months, how easy it is to add it? What kind of changes does youre design allow? Changeability can typically be achieved through: clean code, SOLID principles, the four elements of simple design
-* **Simplicity** and **conciseness** - can you make the code shorter? Can you reduce to solutions that involve fewer parts, fewer code constructs, fewer conditionals? Can you use immutable data?
-* **Performance** - are there simple ways to improve the performance without affecting the other qualities? (Hint: a common one is to transform collections in parallel)
+* **Changeability**
+   * If a user comes and asks you for a change in 3 months, how easy it is to add it?
+   * What kind of changes does youre design allow?
+   * Changeability can typically be achieved through:
+      * Clean Code
+      * SOLID Principles
+      * The Four Elements of Simple Design
+* **Simplicity** and **conciseness**
+   * Can you make the code shorter?
+   * Can you reduce to solutions that involve fewer parts, fewer code constructs, fewer conditionals?
+   * Can you use immutable data?
+* **Performance** - Are there simple ways to improve the performance without affecting the other qualities? (Hint: a common one is to transform collections in parallel)
 
 ## Just exploring
 
