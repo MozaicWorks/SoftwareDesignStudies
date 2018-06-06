@@ -2,9 +2,9 @@
 
 ## Rationale
 
-Software design is a very broad topic, and therefore very difficult to master. To makes things even more difficult, there's little guidance to help someone who would like to learn it. Moreover, online or books often contradict each other.
+Software design is a very broad topic, and therefore very difficult to master. To makes things even more difficult, there's little guidance to help someone who would like to learn it. Moreover, resources such as websites or books often contradict each other.
 
-Other design disciplines have found ways to make this work. Design studies are one of the ways. Design studies mean producing a solution to a very specific problem and getting feedback on your design.
+Other design disciplines have found ways to teach the necessary skills to people who want to become designers or to improve their skills. Design studies are one of the ways. Design studies mean producing a solution to a very specific problem and getting feedback on your design.
 
 Like [coding katas](https://en.wikipedia.org/wiki/Kata_(programming)), design studies are a way to practice. Unlike coding katas, design studies are based on common problems we find in production and are focused on solving the problem within the constraints of production environments.
 
@@ -103,7 +103,6 @@ Database engines sound very complex. However, if you pick only a subset (eg. no 
 * Distributed storage systems
 * Easily allow adding other data types
 
-
 #### References
 
 * The book [Database Systems: The Complete Book](https://www.amazon.com/Database-Systems-Complete-Book-2nd/dp/0131873253/) is the ultimate reference.
@@ -111,7 +110,7 @@ Database engines sound very complex. However, if you pick only a subset (eg. no 
 
 ### 3) Write your own programming language
 
-Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do much. From my experience, a few days are enough to have a minimum programming language working. 
+Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do much. Based on experience, a few days are enough to have a minimum programming language working. 
 
 
 #### Features
@@ -137,7 +136,6 @@ Writing a programming language sounds like a huge task. And it is, provided that
 * General purpose language or DSL (internal / external) for a specific domain
 * Extensibility: allow addition of more data types, allow extension of existing collections or data types etc.
 * Performance (for specific operations)
-
 
 #### Hints
 
