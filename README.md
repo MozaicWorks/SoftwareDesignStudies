@@ -57,7 +57,7 @@ Also, solving the simpler problems will lead to improved design skills, which yo
 
 This is a rather random list. With your help, we can improve it and make it easier to use. But we had to start somewhere.
 
-### Write your own XML / HTML / JSON parser
+### 1) Write your own XML / HTML / JSON parser
 
 Features:
 
@@ -74,7 +74,7 @@ Goal ideas:
 
 Hint: you don't have to support the full language, just enough to learn about the problem and its solutions
 
-### Write your own database engine
+### 2) Write your own database engine
 
 Database engines sound very complex. However, if you pick only a subset (eg. no indexing), and don't support SQL, they become more approachable.
 
@@ -109,7 +109,7 @@ Database engines sound very complex. However, if you pick only a subset (eg. no 
 * The book [Database Systems: The Complete Book](https://www.amazon.com/Database-Systems-Complete-Book-2nd/dp/0131873253/) is the ultimate reference.
 * For an easier start, the book [Data intensive applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) is very useful.
 
-### Write your own programming language
+### 3) Write your own programming language
 
 Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do much. From my experience, few days are enough to have a minimum programming language working. 
 
@@ -155,7 +155,7 @@ Writing a programming language sounds like a huge task. And it is, provided that
 * Groovy videos on writing [internal DSLs](https://www.youtube.com/results?search_query=groovy+dsl) (very technology specific)
 
 
-### Implement tetris fully (including UI)
+### 4) Implement tetris fully (including UI)
 
 Tetris is a well-known game, and quite easy to implement. There's no need for AI, path-finding, terrain generation etc., but it has the common design characteristics of a game: the game cycle, rendering, colision detection etc. 
 
@@ -185,7 +185,7 @@ Games have specific design needs, and we can reuse their lessons in some of the 
 
    * Start with a well of depth 10 and width 1, and with a single square piece. Grow the design slowly towards the result. Of course, use TDD to do it.
 
-### Implement a chat system
+### 5) Implement a chat system
 
 Chat systems are the simplest type of network-based application. They introduce many interesting challenges though.
 
