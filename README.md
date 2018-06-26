@@ -2,20 +2,20 @@
 
 ## Rationale
 
-Software design is a very broad topic, and therefore very difficult to master. To makes things even more difficult, there's little guidance to help someone who would like to learn it. Moreover, resources such as websites or books often contradict each other.
+Software design is a broad topic, and therefore difficult to master. To makes things even more worse, there's little guidance to help someone who would like to learn it. Moreover, resources such as websites or books are contradicting.
 
-Other design disciplines have found ways to teach the necessary skills to people who want to become designers or to improve their skills. Design studies are one of the ways. Design studies mean producing a solution to a very specific problem and getting feedback on your design.
+Other design disciplines have found ways to teach the necessary skills to people who want to become designers or to improve their skills as designers. One way is **Design Studies**. Design studies mean to create a solution to a specific problem and getting feedback on the design.
 
-Like [coding katas](https://en.wikipedia.org/wiki/Kata_(programming)), design studies are a way to practice. Unlike coding katas, design studies are based on common problems we find in production and are focused on solving the problem within the constraints of production environments.
+Like [coding katas](https://en.wikipedia.org/wiki/Kata_(programming)), design studies is one way to practice. Unlike coding katas, design studies are based on common problems we find in production and focus on solving the problem within the constraints of production environments.
 
 ## Design Qualities
 
-When working on a design study, it's important to clarify what design qualities you want to achieve. The design qualities depend on the production context. So it's partly your choice, because you often need to use existing tools, systems or structures that are your constraints.
+When working on a design study, it's important to clarify what design qualities you want to achieve. The design qualities depend on the production context. It is partly your choice, because you often need to use existing tools, systems or structures that are your constraints.
 
-If you don't know where to start, here is a list of design qualities to start from:
+If you don't know where to start, here is a list of design qualities to start with:
 
 ### Changeability
-   * If a user comes and asks you for a change in 3 months, how easy it is to add it?
+   * If a user comes and asks you for a change in 3 months, how easy it is to add the change?
    * What kind of changes does your design allow?
    * Changeability can typically be achieved through:
       * Clean Code
@@ -23,68 +23,64 @@ If you don't know where to start, here is a list of design qualities to start fr
       * [The Four Elements of Simple Design](https://martinfowler.com/bliki/BeckDesignRules.html)
 ### Simplicity and Conciseness
    * Can you make the code shorter while maintaining clarity?
-   * Can you reduce to solutions that involve fewer parts, fewer code constructs, fewer conditionals?
+   * Can you change to a solution that contains fewer parts, fewer code constructs, fewer conditionals?
    * Can you use immutable data?
 ### Performance
 Are there simple ways to improve the performance without affecting the other qualities? (Hint: a common one is to transform collections in parallel)
 
 ## Just exploring
 
-Sometimes, a design study is useful to just explore an idea. For example, check a design study on [functional composability](https://github.com/alexboly/composabilityDesignStudy), and another one on [property based testing and immutability](https://github.com/alexboly/pacmanKataPropertyBasedGroovy). Check also the [React Design Study](https://hackernoon.com/the-react-state-museum-a278c726315) that has more examples and details.
+Sometimes, a design study is useful to just explore an idea. For example, read a design study on [functional composability](https://github.com/alexboly/composabilityDesignStudy), and another on [property based testing and immutability](https://github.com/alexboly/pacmanKataPropertyBasedGroovy). More examples can be found in the [React Design Study](https://hackernoon.com/the-react-state-museum-a278c726315).
 
-## Hints for the practice of a design study
+## Hints for practicing a design study
 
-These are things that can help you when doing design studies:
+Here are a few things that can help you when doing design studies:
 
 * Start with a clear goal: "explore X" or "solve problem X with these design qualities"
 * Choose an interesting problem or an interesting goal
 * Use [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) to drive the design
-* First make things work in the easiest way possible, then refactor towards the design qualities you seek
+* First make things work in the simplest way possible, then refactor towards the design qualities you want
 * Use very precise names
 * Delay performance improvements, unless you have a clear idea how to do it
 * Ask interesting questions and explore
 * Have fun!
 
-## Most complex problems have composed simpler solutions
+## Most complex problems are composed of simpler problems
 
 A typical complaint about any design exercise is that they are too simple. While a design study is arbitrarily complex (you can build a complete twitter clone if you want to), it's unlikely you will have the time to properly explore a lot of complex problems.
 
-It turns out however that most complex problems can simpler composed solutions. These simpler problems tend to repeat, and to compose in different ways. Knowing how to solve the simpler problems and how to split the complex into simple are two important software design skills.
+It turns out, however, that most complex problems are composed of simpler problems. These simpler problems tend to be repeated, and are combined in different ways. Knowing how to solve simpler problems and how to split a complex problem into smaller problems are two important software design skills.
 
-Also, solving the simpler problems will lead to improved design skills, which you can then use for new problems. It's anyway better than not making the effort at all.
+Solving the smaller problems will lead to improved design skills, which you can then use for new problems.
 
 ## List of problems
 
-This is a rather random list. With your help, we can improve it and make it easier to use. But we had to start somewhere.
+This list is a bit random. With your help, we can improve it and make it easier to use. But we had to start somewhere.
 
 ### 1) Write your own XML / HTML / JSON parser
 
-Features:
+#### Features
 
 * Can read data from a file or stream in that format
 * Allow for language extensions
 
-Hint:
-* Support only a subset of the language
-
-Goal ideas: 
+#### Learning goals (choose one)
 
 * Try to do it single pass (only read forward, never go back)
 * Compare performance with existing parsers (especially for large files)
 
-Hint: you don't have to support the full language, just enough to learn about the problem and its solutions
+#### Hint
+* Support only a subset of the language. You don't have to support the full language, just enough to learn about the problem and its solutions
 
 ### 2) Write your own database engine
 
 Database engines sound very complex. However, if you pick only a subset (eg. no indexing), and don't support SQL, they become more approachable.
-
 
 #### Features
 
 * Support a few data types (eg: number, string, binary, date)
 * CRUD operations
 * On disk and in-memory storage
-
 
 #### Optional features
 
@@ -93,7 +89,6 @@ Database engines sound very complex. However, if you pick only a subset (eg. no 
 * Replication
 * Transactions
 * Concurrency
-
 
 #### Learning goals (choose one)
 
@@ -110,8 +105,7 @@ Database engines sound very complex. However, if you pick only a subset (eg. no 
 
 ### 3) Write your own programming language
 
-Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do much. Based on experience, a few days are enough to have a minimum programming language working. 
-
+Writing a programming language sounds like a huge task. And it is, provided that you want other people to use it as well. Fortunately, this is only a design study, so we don't have to do too much. Based on experience, a few days are usually enough to have a minimum programming language working. 
 
 #### Features
 
@@ -139,9 +133,9 @@ Writing a programming language sounds like a huge task. And it is, provided that
 
 #### Hints
 
-* An interpretor is easier to write than a compiler
+* An interpreter is easier to write than a compiler
 * Internal DSLs are easier to write than external DSLs or general purpose languages. Some languages support internal DSLs better.
-* Don't worry if you don't know how to use grammars, compiler-compilers and other tools; just write your own syntactic and semantic parser. It'll work well enough for a small language.
+* Don't worry if you don't know how to use grammars, compiler-compilers and other tools; just write your own syntactic and semantic parser. It will work well enough for a small language.
 * Single-pass syntactic parsers are easier to implement (aka only read forward, never go back)
 * If you know how to use advanced tools, or if you want to learn how to use them, then go for it
 
@@ -153,11 +147,11 @@ Writing a programming language sounds like a huge task. And it is, provided that
 * Groovy videos on writing [internal DSLs](https://www.youtube.com/results?search_query=groovy+dsl) (very technology specific)
 
 
-### 4) Implement tetris fully (including UI)
+### 4) Implement tetris with a user interface
 
-Tetris is a well-known game, and quite easy to implement. There's no need for AI, path-finding, terrain generation etc., but it has the common design characteristics of a game: the game cycle, rendering, colision detection etc. 
+[Tetris](https://en.wikipedia.org/wiki/Tetris) is a well-known game, and not too hard to implement. There's no need for AI, path-finding, terrain generation etc., but it has the common design characteristics of a game: the game cycle, rendering, colision detection etc. 
 
-Games have specific design needs, and we can reuse their lessons in some of the modern dynamic web/ mobile/desktop UIs.
+Games have specific design needs, and we can reuse these lessons in some of the modern dynamic web/mobile/desktop UIs.
 
 #### Features
 
@@ -176,8 +170,8 @@ Games have specific design needs, and we can reuse their lessons in some of the 
 
 * *Performance*:
 
-   * Measure frames per second and improve them as much as possible
-   * Ensure fps stays constant while saving / loading etc.
+   * Measure frames per second, fps, and improve them as much as possible
+   * Ensure that fps stays constant while saving / loading etc.
 
 * *Incremental design*:
 
